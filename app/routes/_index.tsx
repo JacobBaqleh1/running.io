@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
+import MapComponent from "app/components/MapComponents";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -63,6 +64,10 @@ export default function Index() {
 
   return (
     <main className="flex flex-col items-center justify-center h-screen">
+      <div>
+        <h1>User Location Tracking</h1>
+        <MapComponent />
+      </div>
       {/* stopwatch */}
       <div className="border-2 border-pink-500 flex flex-col items-center justify-center m-auto h-[20rem] w-[20rem] ">
         {/* timer display */}
