@@ -51,7 +51,7 @@ const MapComponent = () => {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={pathCoordinates[0]}
-        zoom={10}
+        zoom={16}
       >
         {pathCoordinates.length > 0 && (
           <Polyline
